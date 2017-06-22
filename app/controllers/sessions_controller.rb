@@ -12,7 +12,8 @@ class SessionsController < ApplicationController
     else
       # エラーメッセージを作成する
       flash.now[:danger] = '無効なメールアドレスとパスワードの組み合わせです。'
-      render 'new'
+      render html: "残念でした！認証失敗です。笑"      
+      #render 'new'
     end
   end
   

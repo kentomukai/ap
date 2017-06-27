@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   root 'static_pages#home'
   
   get    '/admin',   to: 'users#index'
+  get    '/detail',  to: 'static_pages#detail'
   get    '/search',  to: 'connections#connect'
   get    '/help',    to: 'static_pages#help'
   get    '/login',   to: 'sessions#new'

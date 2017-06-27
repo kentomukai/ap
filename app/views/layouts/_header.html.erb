@@ -3,6 +3,7 @@
     <nav>
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "ホーム",   root_path %></li>
+        <li><%= link_to "詳細検索", detail_path %></li>
         <li><%= link_to "マニュアル",   help_path %></li>
         <% if logged_in? %>
           <li><%= link_to "管理者画面", admin_path, method: "get" %></li>

@@ -1,5 +1,5 @@
 class ConnectionsController < ApplicationController
   def connect
-    render html: params[:query]
+    require '/Users/kentomukai/ap/lib/searching.rb'
   end
 end

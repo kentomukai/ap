@@ -14,12 +14,11 @@ module ConnectionsHelper
 
         #データベースへ接続
         require 'rubygems'
-        require 'mysql'
         db = Mysql::init
         db.connect("#{$HOST}", "#{$USER}", "#{$PASS}", "#{$NAME}")
 
         #データベースを検索
-        statement = "call searching('うんこ');"
+        statement = "call searching('#{query}');"
         db.query(statement)
         db.close
 

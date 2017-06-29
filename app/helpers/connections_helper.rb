@@ -28,5 +28,10 @@ module ConnectionsHelper
         nameArray.each do |fileName|
             File.delete("#{$WORKPATH}/search/output/#{fileName}") if ! File.size? ("#{$WORKPATH}/search/output/#{fileName}")
         end
+
+        #ファイルを送信する(Zipにすること)
+        Dir.chdir("#{$WORKPATH}/search/output")
+        fileNameArray = Dir.glob("*.csv")
+        send_file "#{$WORKPATH}/search/output/investmentPlan.csv"
     end
 end

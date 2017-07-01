@@ -14,7 +14,7 @@ where
 	description like concat('%', var, '%')
 
 INTO OUTFILE
-	"~/db/search/output/investmentPlan.csv"
+	"~/ap/lib/opendata/search/output/investmentPlan.csv"
 FIELDS TERMINATED BY ','
 ;
 
@@ -38,7 +38,7 @@ and
 	investmentByExpense.expense_amount > 0
 
 INTO OUTFILE
-	"~/db/search/output/investmentByExpense.csv"
+	"~/ap/lib/opendata/search/output/investmentByExpense.csv"
 FIELDS TERMINATED BY ','
 ;
 
@@ -51,7 +51,7 @@ where
 	summary like concat('%', var, '%')
 
 INTO OUTFILE
-	"~/db/search/output/businessInformation.csv"
+	"~/ap/lib/opendata/search/output/businessInformation.csv"
 FIELDS TERMINATED BY ','
 ;
 
@@ -74,7 +74,7 @@ where
 	businessInformation.summary like concat('%', var, '%')
 
 INTO OUTFILE
-	"~/db/search/output/businessSpending.csv"
+	"~/ap/lib/opendata/search/output/businessSpending.csv"
 FIELDS TERMINATED BY ','
 ;
 
@@ -99,7 +99,7 @@ where
 	businessInformation.summary like concat('%', var, '%')
 
 INTO OUTFILE
-	"~/db/search/output/businessBudget.csv"
+	"~/ap/lib/opendata/search/output/businessBudget.csv"
 FIELDS TERMINATED BY ','
 ;
 
@@ -114,7 +114,7 @@ or
 	resource_description like concat('%', var, '%')
 
 INTO OUTFILE
-	"~/db/search/output/dataCatalogue.csv"
+	"~/ap/lib/opendata/search/output/dataCatalogue.csv"
 FIELDS TERMINATED BY ','
 ;
 
@@ -129,7 +129,7 @@ or
 	administrativeProperty.homeDisplay like concat('%', var, '%')
 
 INTO OUTFILE
-	"~/db/search/output/administrativeProperty.csv"
+	"~/ap/lib/opendata/search/output/administrativeProperty.csv"
 FIELDS TERMINATED BY ','
 
 ;
@@ -145,7 +145,7 @@ or
 	ordinaryProperty.location like concat('%', var, '%')
 
 INTO OUTFILE
-	"~/db/search/output/ordinaryProperty.csv"
+	"~/ap/lib/opendata/search/output/ordinaryProperty.csv"
 FIELDS TERMINATED BY ','
 ;
 
@@ -164,7 +164,7 @@ or
 	offerToUSmilitaryProperty.location like concat('%', var, '%')
 
 INTO OUTFILE
-	"~/db/search/output/offerToUSmilitaryProperty.csv"
+	"~/ap/lib/opendata/search/output/offerToUSmilitaryProperty.csv"
 FIELDS TERMINATED BY ','
 ;
 
@@ -183,7 +183,7 @@ or
 	MOFofferToOtherProperty.location like concat('%', var, '%')
 
 INTO OUTFILE
-	"~/db/search/output/MOFofferToOtherProperty.csv"
+	"~/ap/lib/opendata/search/output/MOFofferToOtherProperty.csv"
 FIELDS TERMINATED BY ','
 ;
 
@@ -204,7 +204,7 @@ or
 	marketValueLoanProperty.loanPartner like concat('%', var, '%')
 
 INTO OUTFILE
-	"~/db/search/output/marketValueLoanProperty.csv"
+	"~/ap/lib/opendata/search/output/marketValueLoanProperty.csv"
 FIELDS TERMINATED BY ','
 ;
 
@@ -225,7 +225,7 @@ or
 	freeLendingProperty.loanPartner like concat('%', var, '%')	
 
 INTO OUTFILE
-	"~/db/search/output/freeLendingProperty.csv"
+	"~/ap/lib/opendata/search/output/freeLendingProperty.csv"
 FIELDS TERMINATED BY ','
 ;
 
@@ -244,7 +244,7 @@ or
 	unusedProperty.correspondence like concat('%', var, '%')
 
 INTO OUTFILE
-	"~/db/search/output/unusedProperty.csv"
+	"~/ap/lib/opendata/search/output/unusedProperty.csv"
 FIELDS TERMINATED BY ','
 ;
 
@@ -263,7 +263,7 @@ or
 	specialAccountProperty.location like concat('%', var, '%')
 
 INTO OUTFILE
-	"~/db/search/output/specialAccountProperty.csv"
+	"~/ap/lib/opendata/search/output/specialAccountProperty.csv"
 FIELDS TERMINATED BY ','
 ;
 
@@ -279,7 +279,7 @@ or
 */
 
 INTO OUTFILE
-	"~/db/search/output/othersProperty.csv"
+	"~/ap/lib/opendata/search/output/othersProperty.csv"
 FIELDS TERMINATED BY ','
 ;
 
@@ -296,7 +296,7 @@ or
 	investProperty.location like concat('%', var, '%')
 
 INTO OUTFILE
-	"~/db/search/output/investProperty.csv"
+	"~/ap/lib/opendata/search/output/investProperty.csv"
 FIELDS TERMINATED BY ','
 ;
 

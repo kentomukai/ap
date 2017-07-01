@@ -15,3 +15,7 @@ Date: 2017-07-01, ProccessingTime: 1秒, SearchingWord: マイナンバ
 Date: 2017-07-01, ProccessingTime: 1秒, SearchingWord: 医療
 Date: 2017-07-01, ProccessingTime: 1秒, SearchingWord: 課
 Date: 2017-07-01, ProccessingTime: 1秒, SearchingWord: 会計
+Date: 2017-07-01, ProccessingTime: 1秒, SearchingWord: 労働
+Date: 2017-07-01, ProccessingTime: 1秒, SearchingWord: 労働
+Date: 2017-07-01, ProccessingTime: 0秒, SearchingWord: マイナンバ
+Date: 2017-07-01, ProccessingTime: 1秒, SearchingWord: マイナンバ

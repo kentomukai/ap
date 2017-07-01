@@ -13,9 +13,9 @@ gem 'jquery-rails', '4.1.1'
 gem 'turbolinks',   '5.0.1'
 gem 'jbuilder',     '2.4.1'
 gem 'mysql',        '2.9.1'
-gem 'rubyzip'
-gem "ruby-debug-ide"
-gem "debase"
+gem 'rubyzip',      '1.2.1'
+gem "ruby-debug-ide",'0.6.0'
+gem "debase",       '0.2.1'
 
 group :development, :test do
   gem 'sqlite3', '1.3.11'

@@ -1,7 +1,5 @@
 module ConnectionsHelper
-    def search(query)
-        
-        load '/Users/kentomukai/ap/lib/opendata/config.rb'
+    def simpleSearch(query)
 
         #ベンチマーク
         require 'benchmark'
@@ -32,7 +30,6 @@ module ConnectionsHelper
             Dir.chdir("#{$WORKPATH}/lib/opendata/search/output")
             outputArray = Dir.glob("*.csv")
             targetFiles = []
-
             outputArray.each do |fileName|
                 targetFiles.push(fileName)
             end
@@ -51,7 +48,7 @@ module ConnectionsHelper
         #ログ収集
         require "date"
         File.open("#{$WORKPATH}/lib/opendata/search/log/log.txt", "a") do |f|
-            f.puts("Date: #{Date.today}, ProccessingTime: #{result.floor}秒, SearchingWord: #{ARGV[0]}")
+            f.puts("Date: #{Date.today}, ProccessingTime: #{result.floor}秒, SearchingWord: #{query}")
         end
     end
 end

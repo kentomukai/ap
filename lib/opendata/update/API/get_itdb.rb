@@ -1,4 +1,4 @@
-require '../../config.rb'
+load '/Users/kentomukai/ap/lib/opendata/config.rb'
 
 #APIとファイル名の集合
 set = {'http://www.itdashboard.go.jp/PublicApi/getData.json?dataset=InvestmentPlan'=>"investmentPlan.csv",
@@ -26,7 +26,7 @@ set.each do |api,fileName|
 
     #書き出し用ファイルを初期化
     begin
-        File.delete "#{$WORKPATH}/update/API/output/#{fileName}"
+        File.delete "#{$WORKPATH}/lib/opendata/update/API/output/#{fileName}"
     rescue
     end
 
@@ -34,7 +34,7 @@ set.each do |api,fileName|
     array.each do |i|
         rehash = i
         rehash.each_with_index do |(key,value),index|
-            File.open("#{$WORKPATH}/update/API/output/#{fileName}", "a") do |f|
+            File.open("#{$WORKPATH}/lib/opendata/update/API/output/#{fileName}", "a") do |f|
                 if index == (rehash.size - 1) then
                     if "#{value}" == '' then
                         f.puts "-"

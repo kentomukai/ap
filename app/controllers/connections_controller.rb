@@ -1,6 +1,7 @@
 class ConnectionsController < ApplicationController
-  def connect
-    search(params[:query])
+
+  def simple
+    simpleSearch(params[:query])
   end
 
   def api

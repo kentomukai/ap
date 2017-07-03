@@ -2,7 +2,6 @@ class ConnectionsController < ApplicationController
 
   def simple
     simpleSearch(params[:query])
-    render "static_pages/home"
   end
 
   def api
@@ -14,6 +13,5 @@ class ConnectionsController < ApplicationController
     load "#{$WORKPATH}/lib/opendata/update/noAPI/update.rb"
     redirect_to admin_path
   end
-
-
+  
 end

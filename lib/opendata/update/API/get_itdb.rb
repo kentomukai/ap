@@ -1,5 +1,3 @@
-load '/Users/kentomukai/ap/lib/opendata/config.rb'
-
 #APIとファイル名の集合
 set = {'http://www.itdashboard.go.jp/PublicApi/getData.json?dataset=InvestmentPlan'=>"investmentPlan.csv",
        'http://www.itdashboard.go.jp/PublicApi/getData.json?dataset=InvestmentByExpense'=>"investmentByExpense.csv",

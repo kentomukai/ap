@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   post   '/login',   to: 'sessions#create'
   delete '/logout',  to: 'sessions#destroy'
   get    '/search',  to: 'connections#simple'
-  get    'api',      to: 'connections#api'
+  post    '/api',     to: 'connections#api'
+  post    '/noapi',   to: 'connections#noapi'
 
 end

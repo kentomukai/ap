@@ -2,4 +2,8 @@
 
 <h1>管理者画面</h1>
 
- <%= link_to 'API実行', {:controller => 'connections', :action => 'api'} %>
+<p>自動データ更新機能</p>
+<%= button_to '実行', {:controller => 'connections', :action => 'api'} %>
+<br>
+<p>手動データ更新機能</p>
+<%= button_to '実行', {:controller => 'connections', :action => 'noapi'} %>

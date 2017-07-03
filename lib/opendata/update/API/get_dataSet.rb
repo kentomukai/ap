@@ -1,11 +1,9 @@
-require '../../config.rb'
-
 #書き出し用ファイルを初期化
-Dir.chdir("#{$WORKPATH}/update/API/output")
+Dir.chdir("#{$WORKPATH}/lib/opendata/update/API/output")
 fileNameArray = Dir.glob("dataSet*")
 fileNameArray.each do |file| 
     begin
-        File.delete "#{$WORKPATH}/update/API/output/#{file}"
+        File.delete "#{$WORKPATH}/lib/opendata/update/API/output/#{file}"
     rescue
     end
 end
@@ -43,7 +41,7 @@ while true
         rehash = i
         preData = ""
         rehash.reverse_each do |key,value|
-            File.open("#{$WORKPATH}/update/API/output/dataSet_#{pages}.csv", "a") do |f|
+            File.open("#{$WORKPATH}/lib/opendata/update/API/output/dataSet_#{pages}.csv", "a") do |f|
                 if "#{key}" == 'title' then
                     preData << ("#{value.gsub(/(\R)|,|\t|\s|　/," ")},")
                 elsif "#{key}" == 'organization' then

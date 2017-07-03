@@ -1,1 +1,4 @@
-Date: 2017-07-03, ProccessingTime: 1秒, SearchingWord: マイナン
+Date: 2017-07-03, ProccessingTime: 1秒, SearchingWord: 財務
+Date: 2017-07-03, ProccessingTime: 1秒, SearchingWord: 社会保障
+Date: 2017-07-03, ProccessingTime: 1秒, SearchingWord: 労働
+Date: 2017-07-03, ProccessingTime: 1秒, SearchingWord: 労働

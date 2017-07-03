@@ -34,19 +34,24 @@ module ConnectionsHelper
                 targetFiles.push(fileName)
             end
 
-            # Zip処理の実行
-            Zip::File.open("#{$WORKPATH}/lib/opendata/search/output/result.zip", Zip::File::CREATE) do |zipfile|
-                targetFiles.each do |file|
-                    zipfile.add(file, "#{$WORKPATH}/lib/opendata/search/output/#{file}")
-                end
-            end
+            #CSVファイルがなければ、Zip処理はやらない（うまく動作しない）
+            require "date"
+            if targetFiles.length != 0
 
-            #ファイルを送信する(Zipにすること)
-            send_file "#{$WORKPATH}/lib/opendata/search/output/result.zip"
+                # Zip処理の実行
+                zipFileName = "#{Time.now.strftime("%Y_%m%d_%H%M")}#{query}.zip"
+                Zip::File.open("#{$WORKPATH}/lib/opendata/search/output/#{zipFileName}", Zip::File::CREATE) do |zipfile|
+                    targetFiles.each do |file|
+                        zipfile.add(file, "#{$WORKPATH}/lib/opendata/search/output/#{file}")
+                    end
+                end
+
+                #ファイルを送信する(Zipにすること)
+                send_file "#{$WORKPATH}/lib/opendata/search/output/#{zipFileName}"
+            end
         end
 
         #ログ収集
-        require "date"
         File.open("#{$WORKPATH}/lib/opendata/search/log/log.txt", "a") do |f|
             f.puts("Date: #{Date.today}, ProccessingTime: #{result.floor}秒, SearchingWord: #{query}")
         end

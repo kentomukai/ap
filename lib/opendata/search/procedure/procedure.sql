@@ -156,8 +156,9 @@ from
 	offerToUSmilitaryProperty
 where
 	offerToUSmilitaryProperty.divison like concat('%', var, '%')
-/*or
-	offerToUSmilitaryProperty.divisionDetail like concat('%', var, '%')*/
+or
+	offerToUSmilitaryProperty.divisonDetail like concat('%', var, '%')
+							  
 or
 	offerToUSmilitaryProperty.facilityName like concat('%', var, '%')
 or
@@ -174,10 +175,10 @@ select
 from
 	MOFofferToOtherProperty
 where
-/*	MOFofferToOtherProperty.division like concat('%', var, '%')
+	MOFofferToOtherProperty.divison like concat('%', var, '%')
 or
-	MOFofferToOtherProperty.divisionDetail like concat('%', var, '%')
-or*/
+	MOFofferToOtherProperty.divisonDetail like concat('%', var, '%')
+or
 	MOFofferToOtherProperty.facilityName like concat('%', var, '%')
 or
 	MOFofferToOtherProperty.location like concat('%', var, '%')
@@ -193,10 +194,10 @@ select
 from
 	marketValueLoanProperty	
 where
-/*	marketValueLoanProperty.division like concat('%', var, '%')
+	marketValueLoanProperty.divison like concat('%', var, '%')
 or
-	marketValueLoanProperty.divisionDetail like concat('%', var, '%')
-or*/
+	marketValueLoanProperty.divisonDetail like concat('%', var, '%')
+or
 	marketValueLoanProperty.facilityName like concat('%', var, '%')
 or
 	marketValueLoanProperty.location like concat('%', var, '%')
@@ -214,10 +215,10 @@ select
 from
 	freeLendingProperty
 where
-/*	freeLendingProperty.division like concat('%', var, '%')
+	freeLendingProperty.divison like concat('%', var, '%')
 or
-	freeLendingProperty.divisionDetail like concat('%', var, '%')
-or*/
+	freeLendingProperty.divisonDetail like concat('%', var, '%')
+or
 	freeLendingProperty.facilityName like concat('%', var, '%')
 or
 	freeLendingProperty.location like concat('%', var, '%')
@@ -235,11 +236,11 @@ select
 from
 	unusedProperty	
 where
-/*	unusedProperty.division like concat('%', var, '%')
+	unusedProperty.divison like concat('%', var, '%')
 or
-	unusedProperty.divisionDetail like concat('%', var, '%')
+	unusedProperty.divisonDetail like concat('%', var, '%')
 or
-*/	unusedProperty.location like concat('%', var, '%')
+	unusedProperty.location like concat('%', var, '%')
 or
 	unusedProperty.correspondence like concat('%', var, '%')
 
@@ -254,10 +255,10 @@ select
 from
 	specialAccountProperty
 where
-/*	specialAccountProperty.division like concat('%', var, '%')
+	specialAccountProperty.divison like concat('%', var, '%')
 or
-	specialAccountProperty.divisionDetail like concat('%', var, '%')
-or*/
+	specialAccountProperty.divisonDetail like concat('%', var, '%')
+or
 	specialAccountProperty.facilityName like concat('%', var, '%')
 or
 	specialAccountProperty.location like concat('%', var, '%')
@@ -272,11 +273,10 @@ select
 	*
 from
 	othersProperty
-/*where
-	othersProperty.division like concat('%', var, '%')
+where
+	othersProperty.divison like concat('%', var, '%')
 or
-	othersProperty.divisionDetail like concat('%', var, '%')
-*/
+	othersProperty.divisonDetail like concat('%', var, '%')
 
 INTO OUTFILE
 	"~/ap/lib/opendata/search/output/othersProperty.csv"

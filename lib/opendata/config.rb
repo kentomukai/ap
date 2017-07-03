@@ -9,3 +9,4 @@ $NAME = "od"
 
 #gemsの読み込み
 require 'rubygems'
+require 'zip'       #なぜかヘルパーから呼び出しできないため

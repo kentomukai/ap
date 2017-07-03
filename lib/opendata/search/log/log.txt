@@ -1,21 +1,13 @@
-Date: 2017-06-29, ProccessingTime: 0秒, SearchingWord: マイナンバ
-Date: 2017-06-29, ProccessingTime: 0秒, SearchingWord: 国立研究開発法人
-Date: 2017-06-29, ProccessingTime: 1秒, SearchingWord: 独立行政法人
-Date: 2017-06-29, ProccessingTime: 0秒, SearchingWord: 情報通信研究機構
-Date: 2017-07-01, ProccessingTime: 0秒, SearchingWord: 労働
-Date: 2017-07-01, ProccessingTime: 1秒, SearchingWord: 労働
-Date: 2017-07-01, ProccessingTime: 1秒, SearchingWord: 労働
-Date: 2017-07-01, ProccessingTime: 1秒, SearchingWord: 労働
-Date: 2017-07-01, ProccessingTime: 1秒, SearchingWord: 財政
-Date: 2017-07-01, ProccessingTime: 1秒, SearchingWord: 労働
-Date: 2017-07-01, ProccessingTime: 0秒, SearchingWord: 大臣官房会計課
-Date: 2017-07-01, ProccessingTime: 0秒, SearchingWord: マイナンバ
-Date: 2017-07-01, ProccessingTime: 1秒, SearchingWord: マイナンバ
-Date: 2017-07-01, ProccessingTime: 1秒, SearchingWord: マイナンバ
-Date: 2017-07-01, ProccessingTime: 1秒, SearchingWord: 医療
-Date: 2017-07-01, ProccessingTime: 1秒, SearchingWord: 課
-Date: 2017-07-01, ProccessingTime: 1秒, SearchingWord: 会計
-Date: 2017-07-01, ProccessingTime: 1秒, SearchingWord: 労働
-Date: 2017-07-01, ProccessingTime: 1秒, SearchingWord: 労働
-Date: 2017-07-01, ProccessingTime: 0秒, SearchingWord: マイナンバ
-Date: 2017-07-01, ProccessingTime: 1秒, SearchingWord: マイナンバ
+Date: 2017-07-01, ProccessingTime: 1秒, SearchingWord: 
+Date: 2017-07-01, ProccessingTime: 1秒, SearchingWord: 
+Date: 2017-07-01, ProccessingTime: 1秒, SearchingWord: 
+Date: 2017-07-01, ProccessingTime: 1秒, SearchingWord: 
+Date: 2017-07-01, ProccessingTime: 1秒, SearchingWord: 
+Date: 2017-07-01, ProccessingTime: 1秒, SearchingWord: 
+Date: 2017-07-01, ProccessingTime: 1秒, SearchingWord: 
+Date: 2017-07-01, ProccessingTime: 1秒, SearchingWord: 
+Date: 2017-07-01, ProccessingTime: 1秒, SearchingWord: 
+Date: 2017-07-01, ProccessingTime: 1秒, SearchingWord: 
+Date: 2017-07-01, ProccessingTime: 1秒, SearchingWord: 
+Date: 2017-07-01, ProccessingTime: 1秒, SearchingWord: 
+Date: 2017-07-01, ProccessingTime: 1秒, SearchingWord: 

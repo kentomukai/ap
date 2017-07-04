@@ -19,3 +19,14 @@ Date: 2017-07-04, ProccessingTime: 2秒, SearchingWord: 外務
 Date: 2017-07-04, ProccessingTime: 1秒, SearchingWord: 法務
 Date: 2017-07-04, ProccessingTime: 1秒, SearchingWord: マイナンバ
 Date: 2017-07-04, ProccessingTime: 1秒, SearchingWord: 法務
+Date: 2017-07-04, ProccessingTime: 1秒, SearchingWord: 会計検査院
+Date: 2017-07-04, ProccessingTime: 4秒, SearchingWord: 
+Date: 2017-07-04, ProccessingTime: 0秒, SearchingWord: ありえないキーワードを投入！
+Date: 2017-07-04, ProccessingTime: 0秒, SearchingWord: ありえないキーワオードを投入！
+Date: 2017-07-04, ProccessingTime: 1秒, SearchingWord: 財務省
+Date: 2017-07-04, ProccessingTime: 1秒, SearchingWord: あり得ないあああ
+Date: 2017-07-04, ProccessingTime: 1秒, SearchingWord: あり得ないあああ
+Date: 2017-07-04, ProccessingTime: 1秒, SearchingWord: 絶対にありえないキーワード
+Date: 2017-07-04, ProccessingTime: 1秒, SearchingWord: 外務省
+Date: 2017-07-04, ProccessingTime: 0秒, SearchingWord: うんこ
+Date: 2017-07-04, ProccessingTime: 1秒, SearchingWord: ありえへん単語！！！！！！！

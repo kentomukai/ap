@@ -49,6 +49,9 @@ module ConnectionsHelper
 
                 #ファイルを送信する(Zipにすること)
                 send_file "#{$WORKPATH}/lib/opendata/search/output/#{zipFileName}"
+            else
+                flash[:info] = "該当するデータが見つかりませんでした。別のキーワードで検索してください。"
+                redirect_to root_path
             end
         end
 

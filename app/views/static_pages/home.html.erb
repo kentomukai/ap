@@ -1,6 +1,7 @@
-<div id='logo'>
-<%= link_to image_tag("logo.jpg", alt: "BOA logo"),'http://www.jbaudit.go.jp' %>
-</div>
+<div class="container">
+  <div id='logo'>
+    <%= link_to image_tag("logo.jpg", alt: "BOA logo"),'http://www.jbaudit.go.jp' %>
+  </div>
 
 <div class="center main">
   <p>オープンデータ横断検索システム</p>
@@ -8,7 +9,7 @@
 
 <div class="row">
   <div class="col-md-6 col-md-offset-3 center">
-    <%= form_tag("/search", method: "get") do %>
+    <%= form_tag("/search", method: "get" ) do %>
       <%= text_field_tag(:query, "", size: "70x4") %>
       <%= submit_tag("検索") %>
     <% end %>

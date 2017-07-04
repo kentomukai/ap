@@ -3,13 +3,17 @@
 
 /*クラスのCSS*/
 
+.flash{
+    margin-top: 60px
+}
+
 .center{
     text-align: center;
 }
 
 .main{
     font-size: 35pt;
-    margin: 80px 25px 25px 25px
+    margin: 70px 25px 15px 25px
 }
 
 .footer{
@@ -21,16 +25,25 @@
     height: 50px;  
 }
 
+.apiFrom{
+    margin: 15px 0px 30px 50px
+}
+
 
 /*要素のCSS*/
 
 h1 {
     font-size: 30pt;
-    margin: 75px 25px 25px 25px
+    margin: 25px 0px 25px 25px
+}
+
+h2 {
+    font-size: 15pt;
+    margin: 20px 0px 0px 50px
 }
 
 /*IDのCSS*/
 #logo{
-    margin-top: 45pt;
+    margin-top: 10pt;
     text-align: left;
 }

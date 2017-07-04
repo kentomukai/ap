@@ -17,3 +17,5 @@ Date: 2017-07-03, ProccessingTime: 1秒, SearchingWord: 外交
 Date: 2017-07-03, ProccessingTime: 1秒, SearchingWord: 外務
 Date: 2017-07-04, ProccessingTime: 2秒, SearchingWord: 外務
 Date: 2017-07-04, ProccessingTime: 1秒, SearchingWord: 法務
+Date: 2017-07-04, ProccessingTime: 1秒, SearchingWord: マイナンバ
+Date: 2017-07-04, ProccessingTime: 1秒, SearchingWord: 法務

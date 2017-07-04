@@ -70,11 +70,13 @@ module ConnectionsHelper
             db.options(Mysql::OPT_LOCAL_INFILE, true)
             db.connect("#{$HOST}", "#{$USER}", "#{$PASS}", "#{$NAME}")
 
-            #APIから最新データを取得する
+            #最新データを登録する
             case siteName
 
                 #データカタログサイト
                 when "data" 
+                
+                    #最新データを取得
                     load "#{$WORKPATH}/lib/opendata/update/API/get_dataSet.rb"
                     
                     #データベースの初期化
@@ -89,6 +91,8 @@ module ConnectionsHelper
                 
                 #IT DASHBOARD
                 when "itdb" then
+                    
+                    #最新データを取得
                     load "#{$WORKPATH}/lib/opendata/update/API/get_itdb.rb"
 
                     #データベースの初期化
@@ -106,7 +110,6 @@ module ConnectionsHelper
                     db.query("load data local infile '#{$WORKPATH}/lib/opendata/update/API/output/businessBudget.csv' into table businessBudget fields terminated by ',';")
 
                 when "info" then
-                    render html: "法人インフォは開発中！"
                 else
             end
 
@@ -123,6 +126,7 @@ module ConnectionsHelper
 
     def noapiHelper(siteName)
         #注意：平成27年度（平成28年3月31日現在）のデータ。保管前にUTF-8に変換する必要あり
+
         #ベンチマーク
         require 'benchmark'
         result = Benchmark.realtime do
@@ -133,12 +137,11 @@ module ConnectionsHelper
             db.options(Mysql::OPT_LOCAL_INFILE, true)
             db.connect("#{$HOST}", "#{$USER}", "#{$PASS}", "#{$NAME}")
 
-            #最新のデータを保管する
+            #最新データを登録する
             case siteName
 
                 #行例事業レビュー
                 when "review"
-                    render html: "行政事業レビューは開発中"
                 
                 #国有財産情報公開システム
                 when "property"

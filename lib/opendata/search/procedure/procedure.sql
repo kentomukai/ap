@@ -157,8 +157,7 @@ from
 where
 	offerToUSmilitaryProperty.divison like concat('%', var, '%')
 or
-	offerToUSmilitaryProperty.divisonDetail like concat('%', var, '%')
-							  
+	offerToUSmilitaryProperty.divisonDetail like concat('%', var, '%')				  
 or
 	offerToUSmilitaryProperty.facilityName like concat('%', var, '%')
 or

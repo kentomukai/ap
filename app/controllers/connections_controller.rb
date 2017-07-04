@@ -6,10 +6,12 @@ class ConnectionsController < ApplicationController
 
   def api
     apiHelper(params[:site][:name])
+    redirect_to admin_path
   end
 
   def noapi
     noapiHelper(params[:site][:name])
+    redirect_to admin_path
   end
   
 end

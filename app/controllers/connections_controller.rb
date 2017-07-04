@@ -5,13 +5,11 @@ class ConnectionsController < ApplicationController
   end
 
   def api
-    load "#{$WORKPATH}/lib/opendata/update/API/update.rb"
-    redirect_to admin_path
+    apiHelper(params[:site][:name])
   end
 
   def noapi
-    load "#{$WORKPATH}/lib/opendata/update/noAPI/update.rb"
-    redirect_to admin_path
+    noapiHelper(params[:site][:name])
   end
   
 end

@@ -8,7 +8,7 @@
 
 <div class="row">
   <div class="col-md-6 col-md-offset-3 center">
-      <%= form_tag("/search", method: "get") do %>
+    <%= form_tag("/search", method: "get") do %>
       <%= text_field_tag(:query, "", size: "70x4") %>
       <%= submit_tag("検索") %>
     <% end %>

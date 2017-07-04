@@ -208,6 +208,27 @@ INTO OUTFILE
 FIELDS TERMINATED BY ','
 ;
 
+/*減額貸付財産の検索*/
+select
+	*
+from
+	reducedLoanProperty	
+where
+	reducedLoanProperty.divison like concat('%', var, '%')
+or
+	reducedLoanProperty.divisonDetail like concat('%', var, '%')
+or
+	reducedLoanProperty.facilityName like concat('%', var, '%')
+or
+	reducedLoanProperty.location like concat('%', var, '%')
+or
+	reducedLoanProperty.loanPartner like concat('%', var, '%')
+
+INTO OUTFILE
+	"~/ap/lib/opendata/search/output/reducedLoanProperty.csv"
+FIELDS TERMINATED BY ','
+;
+
 /*無償貸付財産の検索*/
 select
 	*

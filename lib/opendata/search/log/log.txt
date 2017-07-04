@@ -30,3 +30,8 @@ Date: 2017-07-04, ProccessingTime: 1秒, SearchingWord: 絶対にありえない
 Date: 2017-07-04, ProccessingTime: 1秒, SearchingWord: 外務省
 Date: 2017-07-04, ProccessingTime: 0秒, SearchingWord: うんこ
 Date: 2017-07-04, ProccessingTime: 1秒, SearchingWord: ありえへん単語！！！！！！！
+Date: 2017-07-04, ProccessingTime: 1秒, SearchingWord: 医療
+Date: 2017-07-04, ProccessingTime: 1秒, SearchingWord: 会計
+Date: 2017-07-04, ProccessingTime: 1秒, SearchingWord: 北海道財務局
+Date: 2017-07-04, ProccessingTime: 1秒, SearchingWord: 財務
+Date: 2017-07-04, ProccessingTime: 1秒, SearchingWord: マイナン

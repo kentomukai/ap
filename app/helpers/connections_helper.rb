@@ -20,22 +20,24 @@ module ConnectionsHelper
             db.query(statement)
             db.close
 
-            #空のCSVファイルを削除
+            #検索結果のファイル名を日本語にする
             Dir.chdir("#{$WORKPATH}/lib/opendata/search/output")
+            load "#{$WORKPATH}/lib/opendata/search/fileNameConvert.rb"
+
+            #空のCSVファイルを削除
             nameArray = Dir.glob("*.csv")
             nameArray.each do |fileName|
                 File.delete("#{$WORKPATH}/lib/opendata/search/output/#{fileName}") if ! File.size? ("#{$WORKPATH}/lib/opendata/search/output/#{fileName}")
             end
 
             #検索結果のファイル名を取得
-            Dir.chdir("#{$WORKPATH}/lib/opendata/search/output")
             outputArray = Dir.glob("*.csv")
             targetFiles = []
             outputArray.each do |fileName|
                 targetFiles.push(fileName)
             end
 
-            #CSVファイルがなければ、Zip処理はやらない（うまく動作しない）
+            #CSVファイルがなければ、Zip処理はやらない
             require "date"
             if targetFiles.length != 0
 

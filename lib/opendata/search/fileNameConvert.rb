@@ -1,0 +1,20 @@
+#ファイル名の変換
+File.rename('dataCatalogue.csv', 'データカタログサイト.csv')
+
+File.rename('investmentPlan.csv', '政府情報システム投資計画.csv')
+File.rename('investmentByExpense.csv', '政府情報システム投資計画（投資内訳）.csv')
+File.rename('businessInformation.csv', '事業情報.csv')
+File.rename('businessSpending.csv', '事業支出.csv')
+File.rename('businessBudget.csv', '事業予算.csv')
+
+File.rename('administrativeProperty.csv', '行政財産.csv')
+File.rename('ordinaryProperty.csv', '各省各庁普通財産.csv')
+File.rename('investProperty.csv', '政府出資.csv')
+File.rename('offerToUSmilitaryProperty.csv', '米軍へ提供中の財産.csv')
+File.rename('MOFofferToOtherProperty.csv', '財務省が他省庁に使用させている財産.csv')
+File.rename('marketValueLoanProperty.csv', '時価貸付財産.csv')
+File.rename('reducedLoanProperty.csv', '減額貸付財産.csv')
+File.rename('freeLendingProperty.csv', '無償貸付財産.csv')
+File.rename('unusedProperty.csv', '未利用国有地.csv')
+File.rename('specialAccountProperty.csv', '特別会計所属普通財産.csv')
+File.rename('othersProperty.csv', 'その他（山林原野等）.csv')

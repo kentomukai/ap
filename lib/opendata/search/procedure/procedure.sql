@@ -80,15 +80,7 @@ FIELDS TERMINATED BY ','
 
 /*事業予算の検索*/
 select
-	businessInformation.business_id,
-	businessBudget.year,
-	businessBudget.initial_budget,
-	businessBudget.supplementary_budget,
-	businessBudget.carryover_budget_from,
-	businessBudget.carryover_budget_to,
-	businessBudget.reserve_fund,
-	businessBudget.total,
-	businessBudget.enforcement_budget
+	*
 from
 	businessInformation
 left join

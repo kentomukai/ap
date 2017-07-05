@@ -20,15 +20,20 @@ module ConnectionsHelper
             db.query(statement)
             db.close
 
-            #検索結果のファイル名を日本語にする
+            #検索結果をカレントディレクトリにする
             Dir.chdir("#{$WORKPATH}/lib/opendata/search/output")
-            load "#{$WORKPATH}/lib/opendata/search/fileNameConvert.rb"
 
             #空のCSVファイルを削除
             nameArray = Dir.glob("*.csv")
             nameArray.each do |fileName|
                 File.delete("#{$WORKPATH}/lib/opendata/search/output/#{fileName}") if ! File.size? ("#{$WORKPATH}/lib/opendata/search/output/#{fileName}")
             end
+            
+            #検索結果に属性名を追加する
+            load "#{$WORKPATH}/lib/opendata/search/insertColumnName.rb"
+
+            #検索結果のファイル名を日本語にする
+            load "#{$WORKPATH}/lib/opendata/search/fileNameConvert.rb"
 
             #検索結果のファイル名を取得
             outputArray = Dir.glob("*.csv")

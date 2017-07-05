@@ -35,3 +35,15 @@ Date: 2017-07-04, ProccessingTime: 1秒, SearchingWord: 会計
 Date: 2017-07-04, ProccessingTime: 1秒, SearchingWord: 北海道財務局
 Date: 2017-07-04, ProccessingTime: 1秒, SearchingWord: 財務
 Date: 2017-07-04, ProccessingTime: 1秒, SearchingWord: マイナン
+Date: 2017-07-05, ProccessingTime: 1秒, SearchingWord: 法務
+Date: 2017-07-05, ProccessingTime: 1秒, SearchingWord: 法務
+Date: 2017-07-05, ProccessingTime: 1秒, SearchingWord: 財務
+Date: 2017-07-05, ProccessingTime: 1秒, SearchingWord: 法務
+Date: 2017-07-05, ProccessingTime: 1秒, SearchingWord: 労働
+Date: 2017-07-05, ProccessingTime: 1秒, SearchingWord: 労働
+Date: 2017-07-05, ProccessingTime: 1秒, SearchingWord: 労働
+Date: 2017-07-05, ProccessingTime: 1秒, SearchingWord: 労働
+Date: 2017-07-05, ProccessingTime: 1秒, SearchingWord: 労働
+Date: 2017-07-05, ProccessingTime: 1秒, SearchingWord: 北海道財務局
+Date: 2017-07-05, ProccessingTime: 1秒, SearchingWord: 社会保障・税番号制度
+Date: 2017-07-05, ProccessingTime: 1秒, SearchingWord: 情報通信技術

@@ -168,7 +168,7 @@ INTO OUTFILE
 FIELDS TERMINATED BY ','
 ;
 
-/*他省庁に使用させている財産の検索*/
+/*財務省が他省庁に使用させている財産の検索*/
 select
 	*
 from

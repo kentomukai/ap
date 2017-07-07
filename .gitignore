@@ -19,3 +19,6 @@
 
 # Ignore outputFiles
 /lib/opendata/search/output/*
+
+# Ignore gemFile
+/vender/bundle/*

@@ -53,3 +53,4 @@ Date: 2017-07-07, ProccessingTime: 1秒, SearchingWord: 森友学園
 Date: 2017-07-07, ProccessingTime: 1秒, SearchingWord: 森本
 Date: 2017-07-07, ProccessingTime: 1秒, SearchingWord: 天笠
 Date: 2017-07-07, ProccessingTime: 1秒, SearchingWord: 北川
+Date: 2017-07-07, ProccessingTime: 1秒, SearchingWord: マイナンバー

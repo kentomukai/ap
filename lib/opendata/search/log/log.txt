@@ -47,3 +47,9 @@ Date: 2017-07-05, ProccessingTime: 1秒, SearchingWord: 労働
 Date: 2017-07-05, ProccessingTime: 1秒, SearchingWord: 北海道財務局
 Date: 2017-07-05, ProccessingTime: 1秒, SearchingWord: 社会保障・税番号制度
 Date: 2017-07-05, ProccessingTime: 1秒, SearchingWord: 情報通信技術
+Date: 2017-07-07, ProccessingTime: 1秒, SearchingWord: 筑波大学
+Date: 2017-07-07, ProccessingTime: 1秒, SearchingWord: 国立大学法人
+Date: 2017-07-07, ProccessingTime: 1秒, SearchingWord: 森友学園
+Date: 2017-07-07, ProccessingTime: 1秒, SearchingWord: 森本
+Date: 2017-07-07, ProccessingTime: 1秒, SearchingWord: 天笠
+Date: 2017-07-07, ProccessingTime: 1秒, SearchingWord: 北川

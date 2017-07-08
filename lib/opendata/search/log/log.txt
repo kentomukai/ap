@@ -55,3 +55,14 @@ Date: 2017-07-07, ProccessingTime: 1秒, SearchingWord: 天笠
 Date: 2017-07-07, ProccessingTime: 1秒, SearchingWord: 北川
 Date: 2017-07-07, ProccessingTime: 1秒, SearchingWord: マイナンバー
 Date: 2017-07-07, ProccessingTime: 1秒, SearchingWord: 経済産業省
+Date: 2017-07-08, ProccessingTime: 1秒, SearchingWord: 財務
+Date: 2017-07-08, ProccessingTime: 1秒, SearchingWord: 財務
+Date: 2017-07-08, ProccessingTime: 1秒, SearchingWord: 会計
+Date: 2017-07-08, ProccessingTime: 1秒, SearchingWord: tesuto 
+Date: 2017-07-08, ProccessingTime: 1秒, SearchingWord: 財務
+Date: 2017-07-08, ProccessingTime: 1秒, SearchingWord: 会計
+Date: 2017-07-08, ProccessingTime: 1秒, SearchingWord: 会計
+Date: 2017-07-08, ProccessingTime: 1秒, SearchingWord: 財務
+Date: 2017-07-08, ProccessingTime: 1秒, SearchingWord: 労働
+Date: 2017-07-08, ProccessingTime: 1秒, SearchingWord: 労働
+Date: 2017-07-08, ProccessingTime: 1秒, SearchingWord: マイナンバ

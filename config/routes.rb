@@ -12,7 +12,8 @@ Rails.application.routes.draw do
   #コントローラの実行のみ
   post   '/login',   to: 'sessions#create'
   delete '/logout',  to: 'sessions#destroy'
-  get    '/search',  to: 'connections#simple'
+  post   '/search',  to: 'connections#simple'
+  post   '/detail',  to: 'connections#detail'
   get    '/api',     to: 'connections#api'
   get    '/noapi',   to: 'connections#noapi'
   

@@ -4,6 +4,10 @@ class ConnectionsController < ApplicationController
     simpleSearch(params[:query])
   end
 
+  def detail
+    detailSearch(params[:query],params[:data])
+  end
+
   def api
     apiHelper(params[:site][:name])
     flash[:success] = "データベースを更新しました！"

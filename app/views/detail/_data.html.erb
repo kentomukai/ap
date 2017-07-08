@@ -1,0 +1,55 @@
+<h2><a href="http://www.data.go.jp/">データカタログサイト</a></h2>
+<%= form_tag("/detail", method: "post" ) do %>
+    <table>
+    <tr>
+        <div class="test_box">
+        <%= text_field_tag(:query, "", size: "41x4", placeholder: "検索したいキーワードを入力してください") %>
+        <%= submit_tag("検索") %>
+        <div>
+    </tr>
+    <tr>
+        <td class="center" >属性名</td>
+        <td class="center" >検索する属性</td>
+    </tr>
+    <tr>
+        <td class="attribute">データセット_件名</td>
+        <td class="check_box"><%= check_box :data, :dataTitle, {}, checked_value = "1", unchecked_value = "0" %></td>
+    </tr>
+    <tr>
+        <td class="attribute">データセット_公表組織名</td>
+        <td class="check_box"><%= check_box :data, :dataOrg, {}, checked_value = "1", unchecked_value = "0" %></td>
+    </tr>
+    <tr>
+        <td class="attribute">データセット_連絡先</td>
+        <td class="check_box"><%= check_box :data, :dataContact, {}, checked_value = "1", unchecked_value = "0" %></td>
+    </tr>
+    <tr>
+        <td class="attribute">データセット_作成者</td>
+        <td class="check_box"><%= check_box :data, :dataCreate, {}, checked_value = "1", unchecked_value = "0" %></td>
+    </tr>
+    <tr>
+        <td class="attribute">データセット_説明</td>
+        <td class="check_box"><%= check_box :data, :dataDescription, {}, checked_value = "1", unchecked_value = "0" %></td>
+    </tr>
+    <tr>
+        <td class="attribute">データセット_作成頻度</td>
+        <td class="check_box"><%= check_box :data, :dataFreq, {}, checked_value = "1", unchecked_value = "0" %></td>
+    </tr>
+    <tr>
+        <td class="attribute">リソース_リソース名</td>
+        <td class="check_box"><%= check_box :data, :resName, {}, checked_value = "1", unchecked_value = "0" %></td>
+    </tr>
+    <tr>
+        <td class="attribute">リソース_データ型</td>
+        <td class="check_box"><%= check_box :data, :resType, {}, checked_value = "1", unchecked_value = "0" %></td>
+    </tr>
+    <tr>
+        <td class="attribute">リソース_説明</td>
+        <td class="check_box"><%= check_box :data, :resDescription, {}, checked_value = "1", unchecked_value = "0" %></td>
+    </tr>
+    <tr>
+        <td class="attribute">リソース_URL</td>
+        <td class="check_box"><%= check_box :data, :resUrl, {}, checked_value = "1", unchecked_value = "0" %></td>
+    </tr>
+    </table>
+<% end %>

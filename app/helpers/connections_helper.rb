@@ -1,4 +1,5 @@
 module ConnectionsHelper
+
     def simpleSearch(query)
 
         #ベンチマーク
@@ -15,21 +16,9 @@ module ConnectionsHelper
             db.query("call searching('#{query}');")
             db.close
 
-            #検索結果を調整
-            targetFiles = ApplicationHelper::arrange_data(query)
-
-            #CSVファイルがなければ、Zip処理はやらない
-            require "date"
-            if targetFiles.length != 0
-
-                # Zip処理の実行
-                zipFileName = "#{Time.now.strftime("%Y%m%d_")}#{query}.zip"
-                Zip::File.open("#{$WORKPATH}/lib/opendata/search/output/#{zipFileName}", Zip::File::CREATE) do |zipfile|
-                    targetFiles.each do |file|
-                        zipfile.add(file, "#{$WORKPATH}/lib/opendata/search/output/#{file}")
-                    end
-                end
-                #ファイルを送信する(Zipにすること)
+            #検索結果を出力
+            zipFileName = ApplicationHelper::output_data(query)
+            if zipFileName.instance_of?(String)
                 send_file "#{$WORKPATH}/lib/opendata/search/output/#{zipFileName}"
             else
                 flash[:info] = "該当するデータが見つかりませんでした。別のキーワードで検索してください。"
@@ -56,22 +45,9 @@ module ConnectionsHelper
         db.query(statement)
         db.close
 
-        #検索結果を調整
-        targetFiles = ApplicationHelper::arrange_data(query)
-
-        #CSVファイルがなければ、Zip処理はやらない
-        require "date"
-        if targetFiles.length != 0
-
-            # Zip処理の実行
-            zipFileName = "#{Time.now.strftime("%Y%m%d_")}#{query}.zip"
-            Zip::File.open("#{$WORKPATH}/lib/opendata/search/output/#{zipFileName}", Zip::File::CREATE) do |zipfile|
-                targetFiles.each do |file|
-                    zipfile.add(file, "#{$WORKPATH}/lib/opendata/search/output/#{file}")
-                end
-            end
-
-            #ファイルを送信する(Zipにすること)
+        #検索結果を出力
+        zipFileName = ApplicationHelper::output_data(query)
+        if zipFileName.instance_of?(String)
             send_file "#{$WORKPATH}/lib/opendata/search/output/#{zipFileName}"
         else
             flash[:info] = "該当するデータが見つかりませんでした。別のキーワードで検索してください。"

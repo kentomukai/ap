@@ -22,7 +22,7 @@ module ApplicationHelper
             return db
         end
 
-        def arrange_data(query)
+        def output_data(query)
             #検索結果をカレントディレクトリにする
             Dir.chdir("#{$WORKPATH}/lib/opendata/search/output")
 
@@ -45,8 +45,24 @@ module ApplicationHelper
                 targetFiles.push(fileName)
             end
 
-            return targetFiles
+            #CSVファイルがなければ、Zip処理はやらない
+            require "date"
+            if targetFiles.length != 0
+
+                # Zip処理の実行
+                zipFileName = "#{Time.now.strftime("%Y%m%d_")}#{query}.zip"
+                Zip::File.open("#{$WORKPATH}/lib/opendata/search/output/#{zipFileName}", Zip::File::CREATE) do |zipfile|
+                    targetFiles.each do |file|
+                        zipfile.add(file, "#{$WORKPATH}/lib/opendata/search/output/#{file}")
+                    end
+                end
+                #ファイルを送信する(Zipにすること)
+                return zipFileName
+            else
+                return false
+            end
         end
+
         def detais_sql(query, attribute)
         end        
     end

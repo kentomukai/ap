@@ -114,7 +114,7 @@ module ConnectionsHelper
         #ログ収集
         require "date"
         File.open("#{$WORKPATH}/lib/opendata/update/API/log/log.txt", "a") do |f|
-            f.puts("Date: #{Date.today}, ProccessingTime: #{result.floor}秒")
+            f.puts("Date: #{Date.today}, ProccessingTime: #{result.floor}秒 UpdatedSite: #{siteName} ")
         end
     end
 
@@ -192,7 +192,7 @@ module ConnectionsHelper
         #ログ収集
         require "date"
         File.open("#{$WORKPATH}/lib/opendata/update/noAPI/log/log.txt", "a") do |f|
-            f.puts("Date: #{Date.today}, ProccessingTime: #{result.floor}秒")
+            f.puts("Date: #{Date.today}, ProccessingTime: #{result.floor}秒 UpdatedSite: #{siteName} ")
         end
     end
 end

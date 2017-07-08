@@ -3,6 +3,10 @@
 
 /*クラスのCSS*/
 
+.row{
+    margin-bottom: 330px;
+}
+
 .flash{
     margin-top: 60px
 }
@@ -16,11 +20,8 @@
     margin: 70px 25px 15px 25px;
 }
 
-.row{
-    margin-bottom:330px;
-}
-
 .footer{
+    margin-top:100px;
     position: relative;
     bottom: 0;
     left: 0;  
@@ -54,7 +55,6 @@ h2 {
 /*詳細検索機能のテーブル*/
 table {
     margin-left:50px;
-    margin-bottom:50px;
 	border-collapse: collapse;
 }
 

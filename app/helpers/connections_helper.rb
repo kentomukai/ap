@@ -9,23 +9,14 @@ module ConnectionsHelper
             ApplicationHelper::output_init()
 
             #データベースへ接続
-            db = Mysql::init
-            db.connect("#{$HOST}", "#{$USER}", "#{$PASS}", "#{$NAME}")
+            db = ApplicationHelper::connect_database
 
             #データベースを検索
-            statement = "call searching('#{query}');"
-            db.query(statement)
+            db.query("call searching('#{query}');")
             db.close
 
             #検索結果を調整
-            ApplicationHelper::arrange_data(query)
-
-            #検索結果のファイル名を取得
-            outputArray = Dir.glob("*.csv")
-            targetFiles = []
-            outputArray.each do |fileName|
-                targetFiles.push(fileName)
-            end
+            targetFiles = ApplicationHelper::arrange_data(query)
 
             #CSVファイルがなければ、Zip処理はやらない
             require "date"
@@ -38,7 +29,6 @@ module ConnectionsHelper
                         zipfile.add(file, "#{$WORKPATH}/lib/opendata/search/output/#{file}")
                     end
                 end
-
                 #ファイルを送信する(Zipにすること)
                 send_file "#{$WORKPATH}/lib/opendata/search/output/#{zipFileName}"
             else
@@ -54,27 +44,20 @@ module ConnectionsHelper
     end
 
     def detailSearch(query, attribute)
+
         #データベースへ接続
-        db = Mysql::init
-        db.connect("#{$HOST}", "#{$USER}", "#{$PASS}", "#{$NAME}")
+        db = ApplicationHelper::connect_database
 
         #検索結果の初期化
         ApplicationHelper::output_init()
 
         #データベースを検索
-        statement = "call searching('#{query}');"
+        statement = ApplicationHelper::detais_sql(query, attribute)
         db.query(statement)
         db.close
 
         #検索結果を調整
-        ApplicationHelper::arrange_data(query)
-
-        #検索結果のファイル名を取得
-        outputArray = Dir.glob("*.csv")
-        targetFiles = []
-        outputArray.each do |fileName|
-            targetFiles.push(fileName)
-        end
+        targetFiles = ApplicationHelper::arrange_data(query)
 
         #CSVファイルがなければ、Zip処理はやらない
         require "date"
@@ -92,7 +75,7 @@ module ConnectionsHelper
             send_file "#{$WORKPATH}/lib/opendata/search/output/#{zipFileName}"
         else
             flash[:info] = "該当するデータが見つかりませんでした。別のキーワードで検索してください。"
-            redirect_to root_path
+            redirect_to detail_path
         end
     end
     
@@ -103,10 +86,7 @@ module ConnectionsHelper
         result = Benchmark.realtime do
 
             #データベースに接続
-            require 'mysql'
-            db = Mysql::init
-            db.options(Mysql::OPT_LOCAL_INFILE, true)
-            db.connect("#{$HOST}", "#{$USER}", "#{$PASS}", "#{$NAME}")
+            db = ApplicationHelper::connect_database
 
             #最新データを登録する
             case siteName
@@ -170,10 +150,7 @@ module ConnectionsHelper
         result = Benchmark.realtime do
 
             #データベースに接続
-            require 'mysql'
-            db = Mysql::init
-            db.options(Mysql::OPT_LOCAL_INFILE, true)
-            db.connect("#{$HOST}", "#{$USER}", "#{$PASS}", "#{$NAME}")
+            db = ApplicationHelper::connect_database
 
             #最新データを登録する
             case siteName

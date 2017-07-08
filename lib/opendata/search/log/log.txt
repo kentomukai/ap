@@ -66,3 +66,5 @@ Date: 2017-07-08, ProccessingTime: 1秒, SearchingWord: 財務
 Date: 2017-07-08, ProccessingTime: 1秒, SearchingWord: 労働
 Date: 2017-07-08, ProccessingTime: 1秒, SearchingWord: 労働
 Date: 2017-07-08, ProccessingTime: 1秒, SearchingWord: マイナンバ
+Date: 2017-07-08, ProccessingTime: 1秒, SearchingWord: 会計
+Date: 2017-07-08, ProccessingTime: 1秒, SearchingWord: 税務

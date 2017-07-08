@@ -15,6 +15,13 @@ module ApplicationHelper
             FileUtils.mkdir("#{$WORKPATH}/lib/opendata/search/output")
         end
 
+        def connect_database
+            db = Mysql::init
+            db.options(Mysql::OPT_LOCAL_INFILE, true)
+            db.connect("#{$HOST}", "#{$USER}", "#{$PASS}", "#{$NAME}")
+            return db
+        end
+
         def arrange_data(query)
             #検索結果をカレントディレクトリにする
             Dir.chdir("#{$WORKPATH}/lib/opendata/search/output")
@@ -30,6 +37,17 @@ module ApplicationHelper
 
             #検索結果のファイル名を日本語にする
             load "#{$WORKPATH}/lib/opendata/search/fileNameConvert.rb"
+
+            #検索結果のファイル名を取得
+            outputArray = Dir.glob("*.csv")
+            targetFiles = []
+            outputArray.each do |fileName|
+                targetFiles.push(fileName)
+            end
+
+            return targetFiles
         end
+        def detais_sql(query, attribute)
+        end        
     end
 end
